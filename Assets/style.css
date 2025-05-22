@@ -1,3 +1,54 @@
-.listStyleabcd li{
-    list-style-type:none;
+@import  'reset.css';
+
+
+html{
+    font-size: 62.5%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.listStyleabcd{
+    list-style-type: upper-alpha;
+}
+
+p, li{
+    font-size: 1.8rem;
+}
+
+li{
+    margin-bottom: 1.2rem;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.8rem;
+}
+
+
+td, th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.solution-block{
+    border: 1px solid black;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.question{
+    margin-bottom: 5rem;
+}
+
+.sectionHeader{
+    margin-bottom: 1.4rem;
+}
+
+.sectionHeader p{
+    text-align: center;
+}
+
+.sectionHeader .instruct{
+    font-style: italic;
 }
