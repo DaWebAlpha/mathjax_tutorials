@@ -9,65 +9,394 @@
     
 </head>
 <body>
-    <div class="container">
-        <div class="solution-block">
-            <div class="sectionHeader">
-                <p>Section A</p>
-                <p>[48 marks]</p>
-                <p class="instruct">Answer <strong>all</strong> the questions in this section. All questions carry equal marks.</p>
-            </div>
-            <ol>
-                <div class="question">
-                     <li> A binary operation \( \star \) defined on the set of real numbers, \( R \) 
-                        by \( x \star y = 2x + 2y - \frac{xy}{5}\)
-                        find the: 
+                    <div class="container">
+                        <div class="solution-block">
+                            <div class="sectionHeader">
+                                <p>Section A</p>
+                                <p>[48 marks]</p>
+                                <p class="instruct">Answer <strong>all</strong> the questions in this section. All questions carry equal marks.</p>
+                            </div>
+                            <ol>
+                                <div class="question">
+                    <li> A binary operation \( \star \) defined on the set of real numbers, \( \mathbb{R} \) 
+                        by \( x \star y = 2x + 2y - \frac{xy}{5} \).
+                        Find the: 
                     </li>
                     <p> (a) Inverse of \( x \) under the operation \( \star \)</p>
                     <p> (b) Truth set when \( m \star 7  = -2 \star m \) </p>
+                
+                    <details>
+                        <summary>CLICK FOR SOLUTIONS</summary>
+                    
+                        <p>Given: \(x \star y = 2x + 2y - \frac{xy}{5} \)</p>
+
+                        <p><strong>Identity Element:</strong></p>
+                        <p>Let \( e \) be the identity element such that \( x \star e = x \)</p>
+                        <p>\( 2x + 2e - \frac{xe}{5} = x \)</p>
+                        <p>Multiply through by 5:</p>
+                        <p>\( 10x + 10e - xe = 5x \)</p>
+                        <p>\( 10e - xe = 5x - 10x = -5x \)</p>
+                        <p>\( e(10 - x) = -5x \Rightarrow e = \frac{-5x}{10 - x} \)</p>
+                    
+                        <p><strong>(a) Inverse of \( x \):</strong></p>
+                        <p>Let the inverse of \( x \) be \( x^{-1} \) such that:</p>
+                        <p>\( x \star x^{-1} = e = \frac{-5x}{10 - x} \)</p>
+                        <p>Compute \( x \star x^{-1} \):</p>
+                        <p>\( 2x + 2x^{-1} - \frac{xx^{-1}}{5} = \frac{-5x}{10 - x} \)</p>
+                        <p>Multiply through by 5:</p>
+                        <p>\( 10x + 10x^{-1} - xx^{-1} = \frac{-25x}{10 - x} \)</p>
+                        <p>\( x^{-1}(10 - x) + 10x = \frac{-25x}{10 - x} \)</p>
+                        <p>\( x^{-1}(10 - x) = \frac{-25x}{10 - x} - 10x \)</p>
+                        <p>\( x^{-1}(10 - x) = \frac{-25x - 100x + 10x^2}{10 - x} = \frac{10x^2 - 125x}{10 - x} \)</p>
+                        <p>\( x^{-1} = \frac{10x^2 - 125x}{(10 - x)^2} \)</p>
+                    
+                        <p><strong>Answer (a):</strong> \( \boxed{x^{-1} = \frac{10x^2 - 125x}{(10 - x)^2}} \)</p>
+                    
+                        <p><strong>(b) Truth set when \( m \star 7 = -2 \star m \):</strong></p>
+                        <p>\( m \star 7 = 2m + 2(7) - \frac{7m}{5} = 2m + 14 - \frac{7m}{5} \)</p>
+                        <p>\( -2 \star m = 2(-2) + 2m - \frac{(-2)m}{5} = -4 + 2m + \frac{2m}{5} \)</p>
+                        <p>Set both expressions equal:</p>
+                        <p>\( 2m + 14 - \frac{7m}{5} = -4 + 2m + \frac{2m}{5} \)</p>
+                        <p>Subtract \( 2m \) from both sides:</p>
+                        <p>\( 14 - \frac{7m}{5} = -4 + \frac{2m}{5} \)</p>
+                        <p>Multiply through by 5:</p>
+                        <p>\( 14 \times 5 - \frac{7m}{5} \times 5 = -4 \times 5 + \frac{2m}{5} \times 5 \)</p>
+                        <p>\( 70 - 7m = -20 + 2m \)</p>
+                        <p>\( 70 + 20 = 7m + 2m \Rightarrow 90 = 9m \Rightarrow m = 10 \)</p>
+                    
+                        <p><strong>Answer (b):</strong> \( \boxed{\text{Truth set: } \{10\}} \)</p>
+                    </details>
                 </div>
-               
+
                 <div class="question">
-                    <li>Given that <sup>\( x \)</sup>\( C \)<sub>\( 2 \)</sub> + <sup>\( x \)</sup>\( C \)<sub>\( 3 \)</sub> - \( 4x \) = 0, where x is a positive integer, find the value of x
+                    <li>
+                        Given that <sup>\( x \)</sup>\( C \)<sub>\( 2 \)</sub> + <sup>\( x \)</sup>\( C \)<sub>\( 3 \)</sub> − \( 4x = 0 \), where \( x \) is a positive integer, find the value of \( x \).
                     </li>
+                    <details>
+                        <summary>CLICK FOR SOLUTIONS</summary>
+                    
+                        <p>We are given: 
+                            \( {^x}C_2 + {^x}C_3 - 4x = 0 \)
+                        </p>
+                    
+                        <p>Recall the combinations formula:</p>
+                        <p>\( {^x}C_r = \frac{x!}{r!(x - r)!} \)</p>
+                        <p>\( \frac{x!}{(x - 2)!2!} + \frac{x!}{(x - 3)!3!} - 4x = 0 \)</p>
+                        <p>\( \frac{x(x - 1)(x -2)!}{(x -2)!2!} + \frac{x(x - 1)(x - 2)(x - 3)!}{(x - 3)!3!} - 4x = 0\)</p>
+                    
+                        <p>So,</p>
+                    
+                    
+                        <p>Multiply through by 6 to eliminate denominators:</p>
+                        <p>\( 3x(x - 1) + x(x - 1)(x - 2) - 24x = 0 \)</p>
+                    
+                        <p>Factor \( x(x - 1) \):</p>
+                        <p>\( x(x - 1)[3 + (x - 2)] - 24x = 0 \)</p>
+                        <p>\( x(x - 1)(x + 1) - 24x = 0 \)</p>
+                    
+                        <p>Factor out \( x \):</p>
+                        <p>\( x[(x - 1)(x + 1) - 24] = 0 \)</p>
+                    
+                        <p>\( x[x^2 - 1 - 24] = 0\)</p>
+                        <p>\(  x(x^2 - 25) = 0 \)</p>
+                        <p>\( x^3 - 25x = 0 \)</p>
+                        <p>\( x(x^2 - 25)\)</p>
+                        <p>\( x = 0 \ or \ x^2 = 25 \)</p>
+                        <p>\( x = 0 \ or \ x = \pm 5\)</p>
+                        <p>Since x cannot be 0 or negative therefore x is 5</p>
+                    
+                        <p><strong>Answer:</strong> \( \boxed{x = 5} \)</p>
+                    
+                    </details>
                 </div>
+
+
                 <div class="question">
                     <li>A function f is defined by \( f(x) = \frac{72}{px + r}\) where p and q are constants. Given that
-                     \( f(6) = 12 \) and \( f(7) = 9  \) find;
+                        \( f(6) = 12 \) and \( f(7) = 9 \) find;
                     </li>
                     <p>(a) The values of \( p \) and \( r \)</p>
                     <p>(b) \( f^{-1}(\frac{5}{3}) \)</p>
+                
+                    <details>
+                        <summary>CLICK FOR SOLUTIONS:</summary>
+                        <p>\( f(x) = \frac{72}{px + r}, f(6) = 12, \ \text{and} \ f(7) = 9 \)</p>
+                        <p>Taking \( f(6) = 12 \rightarrow \frac{72}{p(6) + r} = 12 \)</p>
+                        <p>\( (6p + r) \times \frac{72}{6p + r} = 12 \times (6p + r) \)</p>
+                        <p>\( 72 = 12(6p + r) \)</p>
+                        <p>\( \frac{72}{12} = \frac{12(6p + r)}{12} \)</p>
+                        <p>\( 6 = 6p + r \)</p>
+                        <p>\( 6p + r = 6 \rightarrow \text{eqn (1)} \)</p>
+                    
+                        <p>Taking \( f(7) = 9 \rightarrow \frac{72}{p(7) + r} = 9 \)</p>
+                        <p>\( (7p + r) \times \frac{72}{7p + r} = 9 \times (7p + r) \)</p>
+                        <p>\( 72 = 9(7p + r) \)</p>
+                        <p>\( \frac{72}{9} = \frac{9(7p + r)}{9} \)</p>
+                        <p>\( 8 = 7p + r \)</p>
+                        <p>\( 7p + r = 8 \rightarrow \text{eqn (2)} \)</p>
+                    
+                        <p>Subtract eqn (1) from eqn (2):</p>
+                        <p>\( (7p + r) - (6p + r) = 8 - 6 \)</p>
+                        <p>\( p = 2 \)</p>
+                    
+                        <p>Substitute \( p = 2 \) into eqn (1):</p>
+                        <p>\( 6(2) + r = 6 \Rightarrow 12 + r = 6 \Rightarrow r = -6 \)</p>
+                    
+                        <p><strong>Therefore,</strong> \( \boxed{p = 2}, \ \boxed{r = -6} \)</p>
+                    
+                        <hr>
+                    
+                        <p><strong>To find</strong> \( f^{-1}\left( \frac{5}{3} \right) \):</p>
+                        <p>We have \( f(x) = \frac{72}{2x - 6} \)</p>
+                        <p>Let \( y = \frac{72}{2x - 6} \)</p>
+                        <p>\( y(2x - 6) = 72 \Rightarrow 2xy - 6y = 72 \Rightarrow 2xy = 72 + 6y \)</p>
+                        <p>\( x = \frac{72 + 6y}{2y} \)</p>
+                    
+                        <p>Now plug in \( y = \frac{5}{3} \):</p>
+                        <p>\( x = \frac{72 + 6 \cdot \frac{5}{3}}{2 \cdot \frac{5}{3}} = \frac{72 + 10}{\frac{10}{3}} = \frac{82 \cdot 3}{10} = \frac{246}{10} = 24.6 \)</p>
+                    
+                        <p><strong>Therefore,</strong> \( \boxed{f^{-1}\left( \frac{5}{3} \right) = 24.6} \)</p>
+                    </details>
                 </div>
+
                 <div class="question">
-                     <li>Resolve \( \frac{2x - 7}{25x -24 - 6x^{2}}\) into partial fractions</li>
-                </div>
+                <li>Resolve \( \frac{2x - 7}{25x - 24 - 6x^{2}} \) into partial fractions</li>
+                <details>
+                    <summary>CLICK FOR SOLUTIONS</summary>
+                    <p>\(\frac{2x - 7}{25x - 24 - 6x^{2}} = \frac{2x - 7}{-6x^2 + 25x - 24}\)</p>
+                    <p>\(\frac{2x - 7}{-6x^2 + 25x - 24} = \frac{2x - 7}{(3x - 8)(2x - 3)}\)</p>
+                    <p>Let \(\frac{2x - 7}{(3x - 8)(2x - 3)} = \frac{A}{3x - 8} + \frac{B}{2x - 3}\)</p>
+                    <p>Combine the right-hand side into a single fraction:</p>
+                    <p>\(\frac{A(2x - 3) + B(3x - 8)}{(3x - 8)(2x - 3)}\)</p>
+                    <p>Now, equate numerators:</p>
+                    <p>\(2x - 7 = A(2x - 3) + B(3x - 8)\)</p>
+                    <p>Expand both terms on the right-hand side:</p>
+                    <p>\(A(2x - 3) = 2Ax - 3A\)</p>
+                    <p>\(B(3x - 8) = 3Bx - 8B\)</p>
+                    <p>So:</p>
+                    <p>\(2x - 7 = (2A + 3B)x + (-3A - 8B)\)</p>
+                    <p>Now, equate coefficients of like terms:</p>
+                    <p>Coefficient of \(x\): \(2 = 2A + 3B\)</p>
+                    <p>Constant term: \(-7 = -3A - 8B\)</p>
+                    <p>We now solve the simultaneous equations:</p>
+                    <ul>
+                        <li>1) \(2A + 3B = 2\)</li>
+                        <li>2) \(-3A - 8B = -7\)</li>
+                    </ul>
+                    <p>Multiply equation (1) by 3:</p>
+                    <p>\(6A + 9B = 6\)</p>
+                    <p>Multiply equation (2) by 2:</p>
+                    <p>\(-6A - 16B = -14\)</p>
+                    <p>Add both equations:</p>
+                    <p>\((6A - 6A) + (9B - 16B) = 6 - 14\)</p>
+                    <p>\(-7B = -8 \Rightarrow B = \frac{8}{7}\)</p>
+                    <p>Substitute \(B = \frac{8}{7}\) into equation (1):</p>
+                    <p>\(2A + 3 \cdot \frac{8}{7} = 2\)</p>
+                    <p>\(2A + \frac{24}{7} = 2\)</p>
+                    <p>\(2A = 2 - \frac{24}{7} = \frac{14 - 24}{7} = \frac{-10}{7}\)</p>
+                    <p>\(A = \frac{-5}{7}\)</p>
+                    <p>So the partial fraction decomposition is:</p>
+                    <p>\(\frac{2x - 7}{(3x - 8)(2x - 3)} = \frac{-5}{7(3x - 8)} + \frac{8}{7(2x - 3)}\)</p>
+                </details>
+            </div>
+
                 <div class="question">
-                    <li>The table shows the distribution of the weights(Newtons) of 100 blood donors</li>
-               <table>
-                  <thead>
-                    <tr>
-                      <th>Weight (N)</th>
-                      <th>55 - 59</th>
-                      <th>60 - 65</th>
-                      <th>66 - 71</th>
-                      <th>72 - 78</th>
-                      <th>79 - 86</th>
-                      <th>87 - 90</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Number of Donors</td>
-                      <td>18</td>
-                      <td>5</td>
-                      <td>20</td>
-                      <td>22</td>
-                      <td>27</td>
-                      <td>8</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p>Draw a histogram for the histogram</p>
-                </div>
+  <li>The table shows the distribution of the weights (Newtons) of 100 blood donors</li>
+  <table>
+    <thead>
+      <tr>
+        <th>Weight (N)</th>
+        <th>55 - 59</th>
+        <th>60 - 65</th>
+        <th>66 - 71</th>
+        <th>72 - 78</th>
+        <th>79 - 86</th>
+        <th>87 - 90</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Number of Donors</td>
+        <td>18</td>
+        <td>5</td>
+        <td>20</td>
+        <td>22</td>
+        <td>27</td>
+        <td>8</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Draw a histogram for the distribution.</p>
+
+  <details>
+    <summary>CLICK FOR SOLUTIONS</summary>
+    <p><strong>Step 1:</strong> Calculate class boundaries, class sizes, and frequency densities.</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Weight (N)</th>
+          <th>Frequency</th>
+          <th>Class Boundaries</th>
+          <th>Class Size</th>
+          <th>Frequency Density \(= \frac{\text{Frequency}}{\text{Class Size}}\)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>55 - 59</td><td>18</td><td>54.5 - 59.5</td><td>5</td><td>\( \frac{18}{5} = 3.6 \)</td></tr>
+        <tr><td>60 - 65</td><td>5</td><td>59.5 - 65.5</td><td>6</td><td>\( \frac{5}{6} \approx 0.83 \)</td></tr>
+        <tr><td>66 - 71</td><td>20</td><td>65.5 - 71.5</td><td>6</td><td>\( \frac{20}{6} \approx 3.33 \)</td></tr>
+        <tr><td>72 - 78</td><td>22</td><td>71.5 - 78.5</td><td>7</td><td>\( \frac{22}{7} \approx 3.14 \)</td></tr>
+        <tr><td>79 - 86</td><td>27</td><td>78.5 - 86.5</td><td>8</td><td>\( \frac{27}{8} = 3.375 \)</td></tr>
+        <tr><td>87 - 90</td><td>8</td><td>86.5 - 90.5</td><td>4</td><td>\( \frac{8}{4} = 2.0 \)</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Step 2:</strong> Draw the histogram using the class boundaries on the horizontal axis and the frequency densities as the bar heights.</p>
+    <ul>
+      <li>The width of each bar corresponds to the class size.</li>
+      <li>The height of each bar represents the frequency density calculated above.</li>
+    </ul>
+    <p><em>Note:</em> A histogram is different from a bar chart because the width of each bar can vary — hence we use frequency density to ensure the area of each bar reflects the actual frequency.</p>
+
+    <!-- Histogram Canvas -->
+    <canvas id="histogramChart" width="700" height="400"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('histogramChart').getContext('2d');
+
+  const intervals = [
+    { xMin: 54.5, xMax: 59.5, y: 3.6 },
+    { xMin: 59.5, xMax: 65.5, y: 0.83 },
+    { xMin: 65.5, xMax: 71.5, y: 3.33 },
+    { xMin: 71.5, xMax: 78.5, y: 3.14 },
+    { xMin: 78.5, xMax: 86.5, y: 3.375 },
+    { xMin: 86.5, xMax: 90.5, y: 2.0 }
+  ];
+
+  const histogramData = intervals.map(interval => ({
+    x: (interval.xMin + interval.xMax) / 2,
+    y: interval.y,
+    _custom: {
+      barStart: interval.xMin,
+      barEnd: interval.xMax
+    }
+  }));
+
+  const allBoundaries = Array.from(
+    new Set(intervals.flatMap(i => [i.xMin, i.xMax]))
+  ).sort((a, b) => a - b);
+
+  Chart.defaults.elements.bar.borderSkipped = false;
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      datasets: [{
+        label: 'Frequency Density',
+        data: histogramData,
+        backgroundColor: 'rgba(75, 192, 192, 0.7)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+        parsing: {
+          x: 'x',
+          y: 'y'
+        },
+        barPercentage: 1.0,
+        categoryPercentage: 1.0,
+        barThickness: 1
+      }]
+    },
+    options: {
+      scales: {
+        x: {
+          type: 'linear',
+          title: {
+            display: true,
+            text: 'Weight (N)'
+          },
+          min: 54,
+          max: 91,
+          ticks: {
+            callback: function(value) {
+              return allBoundaries.includes(value) ? value : '';
+            },
+            autoSkip: false
+          },
+          afterBuildTicks: (axis) => {
+            axis.ticks = allBoundaries.map(val => ({ value: val }));
+          }
+        },
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: 'Frequency Density'
+          }
+        }
+      },
+      plugins: {
+        legend: { display: false }
+      }
+    },
+    plugins: [
+      // Custom Bar Width Plugin
+      {
+        id: 'customBarWidths',
+        beforeDatasetsDraw(chart) {
+          const { ctx, data, chartArea: { top, bottom }, scales: { x, y } } = chart;
+          const meta = chart.getDatasetMeta(0);
+
+          ctx.save();
+          ctx.fillStyle = data.datasets[0].backgroundColor;
+          ctx.strokeStyle = data.datasets[0].borderColor;
+          ctx.lineWidth = data.datasets[0].borderWidth;
+
+          meta.data.forEach((bar, index) => {
+            const val = data.datasets[0].data[index];
+            const barStartX = x.getPixelForValue(val._custom.barStart);
+            const barEndX = x.getPixelForValue(val._custom.barEnd);
+            const barTopY = y.getPixelForValue(val.y);
+            const barBottomY = y.getPixelForValue(0);
+            const barWidth = barEndX - barStartX;
+            const barHeight = barBottomY - barTopY;
+
+            ctx.fillRect(barStartX, barTopY, barWidth, barHeight);
+            ctx.strokeRect(barStartX, barTopY, barWidth, barHeight);
+          });
+
+          ctx.restore();
+          meta.data.forEach(bar => bar.hidden = true);
+        }
+      },
+      // Rotated Zigzag (Z) Plugin
+      {
+        id: 'rotatedZBreak',
+        afterDraw(chart) {
+          const { ctx, chartArea: { bottom }, scales: { x } } = chart;
+
+          const startX = x.getPixelForValue(51.0); // just before 54.5
+          const size = 12;
+          const y = bottom;
+
+          ctx.save();
+          ctx.strokeStyle = 'black';
+          ctx.lineWidth = 2;
+
+          ctx.beginPath();
+          ctx.moveTo(startX, y - size);               // top-left
+          ctx.lineTo(startX + size, y);               // bottom-middle
+          ctx.lineTo(startX + 2 * size, y - size);     // top-right
+          ctx.stroke();
+
+          ctx.restore();
+        }
+      }
+    ]
+  });
+</script>
+  </details>
+</div>
 
                 
                 <div class="question">

@@ -52,3 +52,10 @@ td, th{
 .sectionHeader .instruct{
     font-style: italic;
 }
+
+
+summary{
+    font-size: 1.8rem;
+    color: red;
+    cursor: pointer;
+}
